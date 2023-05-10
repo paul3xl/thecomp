@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
+::-webkit-scrollbar{
+    width: .9em;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 100vw;
+    margin-block: .5em;
+    cursor: none;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 100vw;
+    border: .25em solid #fff;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#000;
+}
+/* HEADER */
+header {
+    height: 170vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0, 0.78), rgba(0,0,0, 0.78)), url(img/backgroundimg.jpg);
+    /* background-attachment: fixed; */
+}
+h1{
+    color: #ffffff59;
+    font-size: 80px;
+    font-weight: lighter;
+    margin-top:-10px;
+    cursor: pointer;
+}
+h2{
+    color: #ffffff59;
+    font-size: 80px;
+    text-align: center;
+    cursor: pointer;
+    transition:all 0.5s;
+    margin-top: 40px;
+}
+h2:hover{
+    color: #fff;
+}
+.row{
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+.row p{
+    color: #fff;
+    margin-left: 40px;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    margin-left: 7px;
+}
+.menubar {
+    background: #ffffff67;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -9%;
+}
+.menubar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menubar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+.menubar ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.menubar ul li a:hover {
+    color: #fff;
+}
+.dropdownmenu,
+.dropdownmenu2 {
+    display: none;
+}
+.menubar ul li:hover .dropdownmenu {
+    display: block;
+    background: #ffffff67;
+    position: absolute;
+    top: 102%;
+    left: 0%;
+}
+.menubar ul li:hover .dropdownmenu ul,
+.menubar ul li:hover .dropdownmenu2 ul {
+    display: block;
+    margin: 10px;
+}
+.menubar ul li:hover .dropdownmenu ul li,
+.menubar ul li:hover .dropdownmenu2 ul li {
+    width: 150px;
+    padding: 10px;
+}
+.menubar ul li:hover .dropdownmenu2 {
+    display: block;
+    background: #ffffff67;
+    position: absolute;
+    top: 102%;
+    left: 8%;
+}
+.imgbox h9{
+    color: #888;
+    font-size: 35px;
+    cursor: pointer;
+}
+.slider p{
+    cursor: pointer;
+}
+.slider{
+    margin-top: 10%;
+    width: 100%;
+}
+.imgbox img{
+    width: 50%;
+    float: left;
+    margin-top: -50px;
+    }
+.btn{
+    border: none;
+    outline:none;
+    background-color: #888;
+    padding: 10px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px auto;
+    color: #ffffff;
+    transition:all 1s;
+}
+.btn:hover{
+    background: #000
+}
+
+.textbox h1{
+    font-size: 43px;
+    text-align: left;
+}
+.textbox p{
+    color: #fff;    
+}
+/* END OF HEADER */
+/* HP lap disp 1 */
+.hplapsdisp{
+    height: 130vh;
+}
+.hplapsdisp h2 {
+    color: #000;
+}
+.hplapsdisp .hplogo{
+    width: 80px;
+    height: 80px;
+    margin-left: 45%;
+    margin-top: 1%;
+}
+.firsthpparent{
+    background: #888;
+    height:100%;
+    margin-top: 30px;
+}
+.hpparent,
+.hpparent2,
+.hpparent3,
+.hpparent4,
+.hpparent5{
+    display: inline-flex;
+}
+.hpparent2,
+.hpparent3,
+.hpparent4,
+.hpparent5{
+    display: none;
+}
+.hpparent{
+    margin-top: 5%;
+}
+.btnsee,
+.btnles{
+    margin-left: 43%;
+    text-transform: uppercase;
+}
+.btnles{
+    display: none;
+}
+.hplapsdisp h2:after{
+    display: block;
+    height: 2px;
+    background: #888;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-left: 46%;
+}
+.hplap1{
+    margin-top: 50px;
+    background: #07000049;
+    width: 30%;
+    height: 28%;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-left: 30px;
+}
+.hplap1 img{
+    width: 90%;
+    margin-left: 30px;
+}
+.hplap1 h3{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    margin-top: 10%;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.price{
+    text-align: center;
+    color:#ffffffa2;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+    cursor: pointer;
+    transition:all 0.5s;
+}
+.price:hover{
+    color:#fff;
+}
+.info{
+    text-align: center;
+    color:#fff;
+    line-height: 145%;
+    cursor: pointer;
+}
+.hplap1 .btn{
+    margin-left: 30%;
+    cursor: pointer;
+    border-radius:10px;
+}
+.hplap1 .btn:hover{
+    color: #000;
+    background: #fff;
+}
+/* end of lapdsip */
+/* PICS */
+.pics{
+    padding: 0;
+    margin: 0;
+}
+.picshowcase{
+    list-style: none;
+    width: 100%;
+}
+.picshowcase li{
+    display:block;
+    float: left;
+    width: 25%;
+}
+.lappic{
+    width: 100%;
+    margin: 0%;
+    overflow: hidden;
+    background: #000;
+}
+.lappic img{
+    opacity: 0.3;
+    width: 100%;
+    height: auto;
+    transform: scale (7);
+    transition: transform 1s, opacity 1s;
+}
+.lappic img:hover{
+    transform: scale(1.04);
+    Opacity: 1;
+}
