@@ -23,7 +23,7 @@ header {
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(rgba(0,0,0, 0.78), rgba(0,0,0, 0.78)), url(img/backgroundimg.jpg);
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 h2{
     color: #ffffff59;
@@ -202,7 +202,6 @@ nav ul li a:hover{background: #00000070;}
     display: inline-flex;
     position: absolute;
     margin: 0;
-    /* background: #00000062; */
 }
 .btninf{
     text-transform: uppercase;
@@ -248,7 +247,6 @@ nav ul li a:hover{background: #00000070;}
 
 
 .hplap1{
-    /* margin-top: 30px; */
     width: 30%;
     height: 20%;
     border-radius: 10px;
@@ -422,7 +420,7 @@ margin-left: -320%;
     transition: all 1s;
     transform: scale(.8)
 }
-
+/* FOOTER */
 footer{
     margin-top: 53%;
     background: #888;
