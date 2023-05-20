@@ -31,13 +31,13 @@
 // function setHd(){
 //     return slider_hd.setAttribute('src', 'hp/' + hd[i]);
 // }
-  const swiper = new Swiper('.swiper', {
-    autoplay: {
-        delay: 3000, 
-        disableOnInteraction: false,
-    },
+const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   loop: true,
-    
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -49,21 +49,13 @@
   },
 
 });
-  const hswiper = new Swiper('.hpswiper', {
-    autoplay: {
-        delay: 10000, 
-        disableOnInteraction: true,
-    },
-  loop: true,
-    
 
-
-  navigation: {
-      nextEl: '.swiper-button-next-hnext',
-      prevEl: '.swiper-button-prev-hprev',
-  },
-
-});
+document.querySelector('.brand').onclick = function () {
+  document.querySelector('.brands').style.display = 'inline-flex'
+}
+document.querySelector('.fa-window-close').onclick = function () {
+  document.querySelector('.brands').style.display = 'none'
+}
 
 
 

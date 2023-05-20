@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'lato', sans-serif;
 }
-
 ::-webkit-scrollbar{
     width: .9em;
 }
@@ -15,8 +14,9 @@
 }
 ::-webkit-scrollbar-thumb{
     background: #888;
+    border: 1px solid #fff;
 }
-::-webkit-scrollbar-thumb:hover{background:#000;}
+::-webkit-scrollbar-thumb:hover{background:#88888880;}
 /* HEADER */
 header {
     height: 140vh;
@@ -40,20 +40,15 @@ h2:hover{color: #fff;}
 }
 .row p{
     color: #fff;
-    margin-left: 40px;
+    /* margin-left: 50px; */
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 40px;
     margin-top: 2%;
     cursor: pointer;
     text-transform: uppercase;
-    word-spacing: 3px;
     letter-spacing: 2px;
-    transition: all 3s;
-}
-.row p:after{display: none; content: ""; height: .5px; width: 64px; background: #fff; margin-left: 6%; border-radius:20%;}
-.row p:hover:after{
-    display: block;
+    width: 19%;
 }
 .menubar {
     position: absolute;
@@ -64,28 +59,67 @@ h2:hover{color: #fff;}
     list-style: none;
     display: flex;
 }
-
 .menubar ul li {
     padding: 10px 30px;
     position: relative;
+    transition: all 0.5s
 }
 .menubar ul li a {
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
     color: #fff;
-    transition: all 0.2s;
+    letter-spacing: 2px;
+    transition: opacity 0.5s;
     text-transform: uppercase;
+    opacity: .5
 }
-.menubar ul li a:hover{font-weight: bold;}
-.dropdownmenu,
+.menubar ul li a:hover{opacity: 1;}
+
 .dropdownmenu2 {
     display: none;
+    transition: all 0.5s;
+    position: relative;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
 }
-.menubar ul li:hover .dropdownmenu {display: block; background: #ffffff67; position: absolute; top: 102%; left: 0%;}
-.menubar ul li:hover .dropdownmenu ul,
-.menubar ul li:hover .dropdownmenu2 ul {display: block; margin: 10px;}
-.menubar ul li:hover .dropdownmenu ul li,
-.menubar ul li:hover .dropdownmenu2 ul li {width: 150px; padding: 10px;}
-.menubar ul li:hover .dropdownmenu2 {display: block; background: #ffffff67; position: absolute; top: 102%; left: 8%;}
+.menubar ul li:hover .dropdownmenu2 ul {display: block; margin: 10px; transition: all 0.5s,}
+.menubar ul li:hover .dropdownmenu2 ul li {width: 155px; padding: 10px 5px; transition: all 0.5s}
+.menubar ul li:hover .dropdownmenu2 {display: block; background: #ffffff17; position: absolute; top: 102%; left: 8%; border-radius: 20px; opacity: 1;
+z-index: 1; transform: translateY(0); transition-delay: 0s,0s,0.3s;}
+.brands{
+    position: relative;
+    right: 50%;
+    margin-top: 26px;
+    display: none;
+}
+.brands a{
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    letter-spacing: 3px;;
+    align-items: center;
+    padding: 10px 5px;
+    margin: 0;
+    width: auto;
+    font-weight: lighter;
+    margin-right: 10px;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition:opacity 0.5s, border 0.5s,;
+    opacity: 0.5;
+}
+.fa-window-close{font-size: 20px; color: #888888cc; font-weight: lighter; cursor: pointer; margin-top: 2%;}
+.brands a:hover{
+ opacity: 1;
+ border: 0.5px solid #8888882c;
+}
+
+
+
 .container{
     width:100%;
     height: 20vh;
@@ -113,7 +147,7 @@ h2:hover{color: #fff;}
     margin: 10px auto;
     color: #fff;
     transition: all 0.5s;
-    border-radius: 6%;
+    border-radius: 10px;
     width: auto;
 }
 .swiper .swiper-button-next{
@@ -507,6 +541,7 @@ footer{
     opacity: .4;
 }
 .soldout{
+    word-spacing: 2px;
     cursor: pointer;
     margin-left: 22%;
     text-align: center;
