@@ -112,7 +112,7 @@ z-index: 1; transform: translateY(0); transition-delay: 0s,0s,0.3s;}
     transition:opacity 0.5s, border 0.5s,;
     opacity: 0.5;
 }
-.fa-window-close{font-size: 20px; color: #888888cc; font-weight: lighter; cursor: pointer; margin-top: 2%;}
+.fa-window-close, .fa-credit-card{font-size: 20px; color: #888888cc; font-weight: lighter; cursor: pointer; margin-top: 2%;}
 .brands a:hover{
  opacity: 1;
  border: 0.5px solid #8888882c;
@@ -144,10 +144,11 @@ z-index: 1; transform: translateY(0); transition-delay: 0s,0s,0.3s;}
     background: #a30303;
     font-size: 15px;
     cursor: pointer;
+    font-weight: lighter;
     margin: 10px auto;
-    color: #fff;
+    color: #ffffffb2;
     transition: all 0.5s;
-    border-radius: 10px;
+    border-radius: 20px;
     width: auto;
 }
 .swiper .swiper-button-next{
@@ -442,7 +443,7 @@ margin-left: -320%;
     transition: all 2s, case;
     
 }
-.hplap1 .btn:hover{ color: #ffff; font-weight: bold; background: rgba(16, 83, 3, 0.904)}
+.hplap1 .btn:hover{color:#fff;  background: rgba(16, 83, 3, 0.774)}
 .stech{
     background-size: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.78)), url(img/pexels-photo-373543.jpeg);
