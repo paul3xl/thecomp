@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/paul3xl.jpeg" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
         <title>THE COMPUTER PLACE</title>
@@ -13,38 +14,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <script src="https://kit.fontawesome.com/2b859027c9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="querries.css">
     </head>
     <body>
-        <header>
-            <div class="row">
-                <p class="animate__animated animate__backInDown">The Computer Place</p>
-            </div>        
-            <div class="menubar">
-                <ul>
-                    <li><a class="brand" href="#">Brands &nbsp </i></a></li>
-                    <li><a href="#">Our Services &nbsp<i class="fa fa-chevron-down"></i></a>
-                    <div class="dropdownmenu2">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-money-bill-wave"></i> buy/sell</a></li>
-                            <li><a href="#"><i class="fa fa-exchange"></i> swap/repair</a></li>
-                        </ul>
-                    </div>
-                    </li>
-                    <li><a href="#">Sign Up <i class="fa fa-user-plus"></i></a></li>
-                    <li><a href="#">Login <i class="fa fa-sign-in"></i></a></li>
-                </ul>
-                <div class="brands animate__animated animate__fadeInLeft animate__backOutRight">
-                    <a href="#">apple</a>
-                    <a href="#">hp</a>
-                    <a href="#">microsoft</a>
-                    <a href="#">dell</a>
-                    <a href="#">samsung</a>
-                    <a href="#">lenovo</a>
-                    <a href="#">toshiba</a>
-                    <a href="#">asus</a>
-                    <i class="far fa-window-close"></i>
+        <header id="header">
+            <nav>
+                <div class="row">
+                    <a href="#header" class="tcpa">The Computer Place</a>
+                    <ul class="mainNav js--mainNav">
+                        <li><a class="brand" href="#brand">Brands</a></li>
+                        <li><a href="#swap">swap <i class="fa fa-exchange"></i></a></li>
+                        <li><a href="#repair">repair <i class="fa fa-wrench"></i></a></li>
+                    </ul>
+                <a class="mobilenavicon js--nav-icon solids"><i class="fa-solid fa-bars"></i></a>
                 </div>
-            </div>
+            </nav>
             <br>
         <h2 class="animate__animated animate__pulse">Upgrade to a new PC today!</h2>
             <div class="container">
@@ -59,94 +44,119 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="textbox">
-                <h9>VARIETY OF PCs TO CHOOSE FROM</h9>
-                <p>Thoway that your old lapi come this side come carry better system at cheap prices.</p>    
+        <div class="menubar">
+            <ul>
+                <li><a href="#cities">Cities &nbsp; &bull;</a></li>
+                <li><a href="#">Portfolio &nbsp; &bull;</a></li>
+                <li><a href="#footer">About TCP</a></li>
+            </ul>
+        </div>
+            <div id="brand" class="brands animate__animated animate__fadeInLeft animate__backOutRight">
+                    <a class="axe" href="#apple">apple</a>
+                    <a class="axe" href="#asus">asus</a>
+                    <a class="axe" href="#dell">dell</a>
+                    <a class="axe" href="#hp">hp</a>
+                    <a class="axe" href="#lenovo">lenovo</a>
+                    <a class="axe" href="#toshiba">toshiba</a>
+                    <a class="axe" href="#samsung">samsung</a>
+                    &nbsp;<i class="far fa-window-close"></i>
             </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About TCP</a></li>
-            </ul>
-        </nav>
-        <br>
-        <section class="hplapsdisp">
-            <img class="hplogo" src="hp/hplogo.png" alt="">
-            <hr>
-            <div class="firsthpparent">
-                <div class="hpparent">
-                <div class="hplap1"> 
-                    <div class="soldout">sold out</div>
-                    <div class="hlider">
-                        <div class="images">
-                        <input type="radio" name="slide" id="img1" checked>
-                        <input type="radio" name="slide" id="img2">
-                        <input type="radio" name="slide" id="img3">
-                        <input type="radio" name="slide" id="img4">
-                        <input type="radio" name="slide" id="img5">
-
-                    <img src="hp/hppro455F.jpg"  class="m1 mo" alt="img1">
-                    <img src="hp/hppro455L.jpg"  class="m2 mo" alt="img2">
-                    <img src="hp/hppro455r.jpg"  class="m3 mo" alt="img3">
-                    <img src="hp/hppro455C.jpg"  class="m4 mo" alt="img4">
-                    <img src="hp/hppro455CC.jpg" class="m5 mo" alt="img5">
+        <div class="textbox">
+            <h2>Welcome to TCP</h2>
+            <p>TCP &mdash; The Computer Place for all and everything computers. <br> Here you can buy a new PC, sell, swap or repair your PC.</p>
+        </div>
+        <section class="lapsdisp" id="hp">
+            <div class="row">
+                <img class="logo" src="hp/hplogo.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="img1" checked>
+                                <input type="radio" name="slide" id="img2">
+                                <input type="radio" name="slide" id="img3">
+                                <input type="radio" name="slide" id="img4">
+                                <input type="radio" name="slide" id="img5">
+                                <img src="hp/hppro455F.jpg"  class="m1" alt="img1">
+                                <img src="hp/hppro455L.jpg"  class="m2" alt="img2">
+                                <img src="hp/hppro455r.jpg"  class="m3" alt="img3">
+                                <img src="hp/hppro455C.jpg"  class="m4" alt="img4">
+                                <img src="hp/hppro455CC.jpg" class="m5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="img1"></label>
+                                <label for="img2"></label>
+                                <label for="img3"></label>
+                                <label for="img4"></label>
+                                <label for="img5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>HP ProBook 455 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™</li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
                     </div>
-                <div class="dots">
-                    <label for="img1"></label>
-                    <label for="img2"></label>
-                    <label for="img3"></label>
-                    <label for="img4"></label>
-                    <label for="img5"></label>
                 </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="pmg1" checked>
+                                <input type="radio" name="slide" id="pmg2">
+                                <input type="radio" name="slide" id="pmg3">
+                                <input type="radio" name="slide" id="pmg4">
+                                <input type="radio" name="slide" id="pmg5">
+                                <input type="radio" name="slide" id="pmg6">
+                                <input type="radio" name="slide" id="pmg7">
+                                <img src="hp/hpzbookf.jpg"  class="p1" alt="img1">
+                                <img src="hp/hpzbookl.jpg"  class="p2" alt="img2">
+                                <img src="hp/hpzbookr.jpg"  class="p3" alt="img3">
+                                <img src="hp/hpzbookb.jpg"  class="p4" alt="img4">
+                                <img src="hp/hpzbookBb.jpg" class="p5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="pmg1"></label>
+                                <label for="pmg2"></label>
+                                <label for="pmg3"></label>
+                                <label for="pmg4"></label>
+                                <label for="pmg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>HP ZBook Power G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13-inch laptop</li>
+                                <li>11th Gen InteI® Core™</li>
+                                <li>stunning materials</li>
+                                <li>minimal footprint</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                    <h3>HP ProBook 455 G9 15.6"</h3> 
-                    <p class="price">Starting from ₦340K</p> <br>
-                    <p class="info">FHD Laptop with AMD Ryzen™ 7 <br>
-                        Windows 11 ProAMD Ryzen™ <br> 716 GB RAM512 GB SSD15.6" <br> FHDAMD Radeon™ Graphics
-                    </p>
-                    <button class="btninf"><a href="#">More Info &nbsp;</a><i class="fa fa-angle-right"></i></button>
-                    <!-- <button class="btn">BUY NOW! &nbsp <i class="fa-duotone fa-cart-shopping"></i></button> -->
-                </div>    
-                <div id="vertical-line"></div>
-                <br>
-                    <div class="hplap1">
-                    <div class="hlider">
-                        <div class="images">
-                        <input type="radio" name="slide" id="pmg1" checked>
-                        <input type="radio" name="slide" id="pmg2">
-                        <input type="radio" name="slide" id="pmg3">
-                        <input type="radio" name="slide" id="pmg4">
-                        <input type="radio" name="slide" id="pmg5">
-                        <input type="radio" name="slide" id="pmg6">
-                        <input type="radio" name="slide" id="pmg7">
-
-                    <img src="hp/hpzbookf.jpg"  class="p1" alt="img1">
-                    <img src="hp/hpzbookl.jpg"  class="p2" alt="img2">
-                    <img src="hp/hpzbookr.jpg"  class="p3" alt="img3">
-                    <img src="hp/hpzbookb.jpg"  class="p4" alt="img4">
-                    <img src="hp/hpzbookBb.jpg" class="p5" alt="img5">
-                </div>
-                <div class="dots">
-                    <label for="pmg1"></label>
-                    <label for="pmg2"></label>
-                    <label for="pmg3"></label>
-                    <label for="pmg4"></label>
-                    <label for="pmg5"></label>
-                </div>
-                </div>
-                        <br>
-                        <h3>HP ZBook Power G9 15.6" </h3>
-                        <p class="price">Starting from ₦340K</p> <br>
-                        <p class="info">HP ENVY 17-cr0006na 4K Laptop - Core™ i7 <br>Windows 11 HomeIntel® Core™ <br> i732 GB RAM1 TB <br>SSD17.3" 4K UHDIntel® Iris® Xᵉ Graphics</p>
-                        <button class="btninf"><a href="#">More Info &nbsp;<i class="fa fa-angle-right"></i></a></button>
-                        <button class="btn">BUY NOW!&nbsp <i class="fa fa-shopping-cart"></i></i></button>
-                    </div>    
-                <div id="vertical-line"></div>
-                    <br>
-                    <div class="hplap1">
+                <div class="col span-1-of-3">
+                    <div class="lap1">
                         <div class="hlider">
                             <div class="images">
                                 <input type="radio" name="slide" id="pimg1" checked>
@@ -154,7 +164,6 @@
                                 <input type="radio" name="slide" id="pimg3">
                                 <input type="radio" name="slide" id="pimg4">
                                 <input type="radio" name="slide" id="pimg5">
-
                                 <img src="hp/hpelitef.jpg" class="pi1"  alt="pimg1">
                                 <img src="hp/hpelitel.jpg" class="pi2"  alt="pimg2">
                                 <img src="hp/hpeliter.jpg" class="pi3"  alt="pimg3">
@@ -168,134 +177,1133 @@
                                 <label for="pimg4"></label>
                                 <label for="pimg5"></label>
                             </div>
-                        </div>                        
-                        <br>
-                        <h3>HP EliteBook 840 G9 14"</h3>
-                        <p class="price">Starting from ₦340K</p> <br>
-                        <p class="info"> WUXGA Laptop with i7 <br> Sure View & Wolf Pro Security <br> Windows 11 ProIntel® Core™ i7 <br> 16 GB RAM512 GB SSD14" <br> WUXGAIntel® Iris® Xᵉ GraphicsIntel® Evo™</p>
-                        <button class="btninf"><a href=""> More Info</a> &nbsp;<i class="fa fa-angle-right"></i></button>
-                        <button class="btn">BUY NOW!&nbsp <i class="fa fa-shopping-cart"></i></i></button>
+                        </div> 
+                        <div class="lapname">
+                            <h3>HP EliteBook 840 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™ </li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
                     </div>
                 </div>
-                <!-- <button class="btnsee"><a href="#">show me more &nbsp</a> <i class="fa fa-external-link" id="faexternal"></i></button> <br> -->
-            </div> 
+                <div class="show">
+                    <a class="btn showmemore" href="www.hp.com">show me more</a>
+                </div>
+                <div class="memore">
+                    <a class="btn showmemore sb" href="#brand">show me more brands</a>
+                </div>
+            </div>
+        </section>
+        <!-- DELL LAPS DISP -->
+        <section class="lapsdisp" id="dell">
+                        <div class="row">
+                <img class="logo" src="hp/dellogo.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="demg1" checked>
+                                <input type="radio" name="slide" id="demg2">
+                                <input type="radio" name="slide" id="demg3">
+                                <input type="radio" name="slide" id="demg4">
+                                <input type="radio" name="slide" id="demg5">
+                                <img src="hp/hppro455F.jpg"  class="de1" alt="img1">
+                                <img src="hp/hppro455L.jpg"  class="de2" alt="img2">
+                                <img src="hp/hppro455r.jpg"  class="de3" alt="img3">
+                                <img src="hp/hppro455C.jpg"  class="de4" alt="img4">
+                                <img src="hp/hppro455CC.jpg" class="de5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="demg1"></label>
+                                <label for="demg2"></label>
+                                <label for="demg3"></label>
+                                <label for="demg4"></label>
+                                <label for="demg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>dell ProBook 455 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™</li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="dmg1" checked>
+                                <input type="radio" name="slide" id="dmg2">
+                                <input type="radio" name="slide" id="dmg3">
+                                <input type="radio" name="slide" id="dmg4">
+                                <input type="radio" name="slide" id="dmg5">
+                                <input type="radio" name="slide" id="dmg6">
+                                <input type="radio" name="slide" id="dmg7">
+                                <img src="hp/hpzbookf.jpg"  class="d1" alt="img1">
+                                <img src="hp/hpzbookl.jpg"  class="d2" alt="img2">
+                                <img src="hp/hpzbookr.jpg"  class="d3" alt="img3">
+                                <img src="hp/hpzbookb.jpg"  class="d4" alt="img4">
+                                <img src="hp/hpzbookBb.jpg" class="d5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="dmg1"></label>
+                                <label for="dmg2"></label>
+                                <label for="dmg3"></label>
+                                <label for="dmg4"></label>
+                                <label for="dmg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>dell ZBook Power G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13-inch laptop</li>
+                                <li>11th Gen InteI® Core™</li>
+                                <li>stunning materials</li>
+                                <li>minimal footprint</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="dimg1" checked>
+                                <input type="radio" name="slide" id="dimg2">
+                                <input type="radio" name="slide" id="dimg3">
+                                <input type="radio" name="slide" id="dimg4">
+                                <input type="radio" name="slide" id="dimg5">
+                                <img src="hp/hpelitef.jpg" class="di1"  alt="dimg1">
+                                <img src="hp/hpelitel.jpg" class="di2"  alt="dimg2">
+                                <img src="hp/hpeliter.jpg" class="di3"  alt="dimg3">
+                                <img src="hp/hpeliteb.jpg" class="di4"  alt="dimg4">
+                                <img src="hp/hpelitebb.jpg" class="di5"  alt="dimg5">
+                            </div>
+                            <div class="dots">
+                                <label for="dimg1"></label>
+                                <label for="dimg2"></label>
+                                <label for="dimg3"></label>
+                                <label for="dimg4"></label>
+                                <label for="dimg5"></label>
+                            </div>
+                        </div> 
+                        <div class="lapname">
+                            <h3>dell EliteBook 840 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™ </li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="show">
+                    <a class="btn showmemore" href="www.hp.com">show me more</a>
+                </div>
+                <div class="memore">
+                    <a class="btn showmemore sb" href="#brand">show me more brands</a>
+                </div>
+            </div>
+        </section>
+        <section class="lapsdisp" id="asus">
+            <div class="row">
+                <img class="logo" src="hp/asus.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="aemg1" checked>
+                                <input type="radio" name="slide" id="aemg2">
+                                <input type="radio" name="slide" id="aemg3">
+                                <input type="radio" name="slide" id="aemg4">
+                                <input type="radio" name="slide" id="aemg5">
+                                <img src="hp/hppro455F.jpg"  class="ae1" alt="img1">
+                                <img src="hp/hppro455L.jpg"  class="ae2" alt="img2">
+                                <img src="hp/hppro455r.jpg"  class="ae3" alt="img3">
+                                <img src="hp/hppro455C.jpg"  class="ae4" alt="img4">
+                                <img src="hp/hppro455CC.jpg" class="ae5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="aemg1"></label>
+                                <label for="aemg2"></label>
+                                <label for="aemg3"></label>
+                                <label for="aemg4"></label>
+                                <label for="aemg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>Asus ProBook 455 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™</li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="amg1" checked>
+                                <input type="radio" name="slide" id="amg2">
+                                <input type="radio" name="slide" id="amg3">
+                                <input type="radio" name="slide" id="amg4">
+                                <input type="radio" name="slide" id="amg5">
+                                <input type="radio" name="slide" id="amg6">
+                                <input type="radio" name="slide" id="amg7">
+                                <img src="hp/hpzbookf.jpg"  class="a1" alt="img1">
+                                <img src="hp/hpzbookl.jpg"  class="a2" alt="img2">
+                                <img src="hp/hpzbookr.jpg"  class="a3" alt="img3">
+                                <img src="hp/hpzbookb.jpg"  class="a4" alt="img4">
+                                <img src="hp/hpzbookBb.jpg" class="a5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="amg1"></label>
+                                <label for="amg2"></label>
+                                <label for="amg3"></label>
+                                <label for="amg4"></label>
+                                <label for="amg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>Asus ZBook Power G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13-inch laptop</li>
+                                <li>11th Gen InteI® Core™</li>
+                                <li>stunning materials</li>
+                                <li>minimal footprint</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="asmg1" checked>
+                                <input type="radio" name="slide" id="asmg2">
+                                <input type="radio" name="slide" id="asmg3">
+                                <input type="radio" name="slide" id="asmg4">
+                                <input type="radio" name="slide" id="asmg5">
+                                <img src="hp/hpelitef.jpg" class="as1"  alt="dimg1">
+                                <img src="hp/hpelitel.jpg" class="as2"  alt="dimg2">
+                                <img src="hp/hpeliter.jpg" class="as3"  alt="dimg3">
+                                <img src="hp/hpeliteb.jpg" class="as4"  alt="dimg4">
+                                <img src="hp/hpelitebb.jpg" class="as5"  alt="dimg5">
+                            </div>
+                            <div class="dots">
+                                <label for="asmg1"></label>
+                                <label for="asmg2"></label>
+                                <label for="asmg3"></label>
+                                <label for="asmg4"></label>
+                                <label for="asmg5"></label>
+                            </div>
+                        </div> 
+                        <div class="lapname">
+                            <h3>Asus EliteBook 840 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™ </li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="show">
+                    <a class="btn showmemore" href="www.hp.com">show me more</a>
+                </div>
+                <div class="memore">
+                    <a class="btn showmemore sb" href="#brand">show me more brands</a>
+                </div>
+            </div>
+        </section>
+        <section class="lapsdisp" id="apple">
+            <div class="row">
+                <img class="logo" src="hp/Apple.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="apmg1" checked>
+                                <input type="radio" name="slide" id="apmg2">
+                                <input type="radio" name="slide" id="apmg3">
+                                <input type="radio" name="slide" id="apmg4">
+                                <input type="radio" name="slide" id="apmg5">
+                                <img src="hp/hppro455F.jpg"  class="ap1" alt="img1">
+                                <img src="hp/hppro455L.jpg"  class="ap2" alt="img2">
+                                <img src="hp/hppro455r.jpg"  class="ap3" alt="img3">
+                                <img src="hp/hppro455C.jpg"  class="ap4" alt="img4">
+                                <img src="hp/hppro455CC.jpg" class="ap5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="apmg1"></label>
+                                <label for="apmg2"></label>
+                                <label for="apmg3"></label>
+                                <label for="apmg4"></label>
+                                <label for="apmg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>Apple ProBook 455 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™</li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="ape1" checked>
+                                <input type="radio" name="slide" id="ape2">
+                                <input type="radio" name="slide" id="ape3">
+                                <input type="radio" name="slide" id="ape4">
+                                <input type="radio" name="slide" id="ape5">
+                                <img src="hp/hpzbookf.jpg"  class="ape1" alt="img1">
+                                <img src="hp/hpzbookl.jpg"  class="ape2" alt="img2">
+                                <img src="hp/hpzbookr.jpg"  class="ape3" alt="img3">
+                                <img src="hp/hpzbookb.jpg"  class="ape4" alt="img4">
+                                <img src="hp/hpzbookBb.jpg" class="ape5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="ape1"></label>
+                                <label for="ape2"></label>
+                                <label for="ape3"></label>
+                                <label for="ape4"></label>
+                                <label for="ape5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>Apple ZBook Power G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13-inch laptop</li>
+                                <li>11th Gen InteI® Core™</li>
+                                <li>stunning materials</li>
+                                <li>minimal footprint</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="apeg1" checked>
+                                <input type="radio" name="slide" id="apeg2">
+                                <input type="radio" name="slide" id="apeg3">
+                                <input type="radio" name="slide" id="apeg4">
+                                <input type="radio" name="slide" id="apeg5">
+                                <img src="hp/hpelitef.jpg" class="aps1"  alt="dimg1">
+                                <img src="hp/hpelitel.jpg" class="aps2"  alt="dimg2">
+                                <img src="hp/hpeliter.jpg" class="aps3"  alt="dimg3">
+                                <img src="hp/hpeliteb.jpg" class="aps4"  alt="dimg4">
+                                <img src="hp/hpelitebb.jpg" class="aps5"  alt="dimg5">
+                            </div>
+                            <div class="dots">
+                                <label for="apeg1"></label>
+                                <label for="apeg2"></label>
+                                <label for="apeg3"></label>
+                                <label for="apeg4"></label>
+                                <label for="apeg5"></label>
+                            </div>
+                        </div> 
+                        <div class="lapname">
+                            <h3>Apple EliteBook 840 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™ </li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="show">
+                    <a class="btn showmemore" href="www.hp.com">show me more</a>
+                </div>
+                <div class="memore">
+                    <a class="btn showmemore sb" href="#brand">show me more brands</a>
+                </div>
+            </div>
+        </section>
 
+        <section class="lapsdisp" id="lenovo">
+            <div class="row">
+                <img class="logo" src="hp/Lenovo.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="aemg1" checked>
+                                <input type="radio" name="slide" id="lemg2">
+                                <input type="radio" name="slide" id="lemg3">
+                                <input type="radio" name="slide" id="lemg4">
+                                <input type="radio" name="slide" id="lemg5">
+
+                                <img src="hp/hppro455F.jpg"  class="le1" alt="img1">
+                                <img src="hp/hppro455L.jpg"  class="le2" alt="img2">
+                                <img src="hp/hppro455r.jpg"  class="le3" alt="img3">
+                                <img src="hp/hppro455C.jpg"  class="le4" alt="img4">
+                                <img src="hp/hppro455CC.jpg" class="le5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="lemg1"></label>
+                                <label for="lemg2"></label>
+                                <label for="lemg3"></label>
+                                <label for="lemg4"></label>
+                                <label for="lemg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>lenovo ProBook 455 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™</li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="levmg1" checked>
+                                <input type="radio" name="slide" id="levmg2">
+                                <input type="radio" name="slide" id="levmg3">
+                                <input type="radio" name="slide" id="levmg4">
+                                <input type="radio" name="slide" id="levmg5">
+                                <input type="radio" name="slide" id="levmg6">
+                                <input type="radio" name="slide" id="levmg7">
+                                <img src="hp/hpzbookf.jpg"  class="lev1" alt="img1">
+                                <img src="hp/hpzbookl.jpg"  class="lev2" alt="img2">
+                                <img src="hp/hpzbookr.jpg"  class="lev3" alt="img3">
+                                <img src="hp/hpzbookb.jpg"  class="lev4" alt="img4">
+                                <img src="hp/hpzbookBb.jpg" class="lev5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="levmg1"></label>
+                                <label for="levmg2"></label>
+                                <label for="levmg3"></label>
+                                <label for="levmg4"></label>
+                                <label for="levmg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>lenovo ZBook Power G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13-inch laptop</li>
+                                <li>11th Gen InteI® Core™</li>
+                                <li>stunning materials</li>
+                                <li>minimal footprint</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="levg1" checked>
+                                <input type="radio" name="slide" id="levg2">
+                                <input type="radio" name="slide" id="levg3">
+                                <input type="radio" name="slide" id="levg4">
+                                <input type="radio" name="slide" id="levg5">
+                                <img src="hp/hpelitef.jpg" class="lv1"  alt="dimg1">
+                                <img src="hp/hpelitel.jpg" class="lv2"  alt="dimg2">
+                                <img src="hp/hpeliter.jpg" class="lv3"  alt="dimg3">
+                                <img src="hp/hpeliteb.jpg" class="lv4"  alt="dimg4">
+                                <img src="hp/hpelitebb.jpg" class="lv5"  alt="dimg5">
+                            </div>
+                            <div class="dots">
+                                <label for="levg1"></label>
+                                <label for="levg2"></label>
+                                <label for="levg3"></label>
+                                <label for="levg4"></label>
+                                <label for="levg5"></label>
+                            </div>
+                        </div> 
+                        <div class="lapname">
+                            <h3>lenovo EliteBook 840 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™ </li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="show">
+                    <a class="btn showmemore" href="www.hp.com">show me more</a>
+                </div>
+                <div class="memore">
+                    <a class="btn showmemore sb" href="#brand">show me more brands</a>
+                </div>
+            </div>
+        </section>
+        <section class="lapsdisp" id="toshiba">
+            <div class="row">
+                <img class="logo" src="hp/Toshiba.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="tomg1" checked>
+                                <input type="radio" name="slide" id="tomg2">
+                                <input type="radio" name="slide" id="tomg3">
+                                <input type="radio" name="slide" id="tomg4">
+                                <input type="radio" name="slide" id="tomg5">
+                                <img src="hp/hppro455F.jpg"  class="to1" alt="img1">
+                                <img src="hp/hppro455L.jpg"  class="to2" alt="img2">
+                                <img src="hp/hppro455r.jpg"  class="to3" alt="img3">
+                                <img src="hp/hppro455C.jpg"  class="to4" alt="img4">
+                                <img src="hp/hppro455CC.jpg" class="to5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="tomg1"></label>
+                                <label for="tomg2"></label>
+                                <label for="tomg3"></label>
+                                <label for="tomg4"></label>
+                                <label for="tomg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>lenovo ProBook 455 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™</li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="tsmg1" checked>
+                                <input type="radio" name="slide" id="tsmg2">
+                                <input type="radio" name="slide" id="tsmg3">
+                                <input type="radio" name="slide" id="tsmg4">
+                                <input type="radio" name="slide" id="tsmg5">
+                                <input type="radio" name="slide" id="tsmg6">
+                                <input type="radio" name="slide" id="tsmg7">
+                                <img src="hp/hpzbookf.jpg"  class="ts1" alt="img1">
+                                <img src="hp/hpzbookl.jpg"  class="ts2" alt="img2">
+                                <img src="hp/hpzbookr.jpg"  class="ts3" alt="img3">
+                                <img src="hp/hpzbookb.jpg"  class="ts4" alt="img4">
+                                <img src="hp/hpzbookBb.jpg" class="ts5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="tsmg1"></label>
+                                <label for="tsmg2"></label>
+                                <label for="tsmg3"></label>
+                                <label for="tsmg4"></label>
+                                <label for="tsmg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>toshiba ZBook Power G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13-inch laptop</li>
+                                <li>11th Gen InteI® Core™</li>
+                                <li>stunning materials</li>
+                                <li>minimal footprint</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="tsg1" checked>
+                                <input type="radio" name="slide" id="tsg2">
+                                <input type="radio" name="slide" id="tsg3">
+                                <input type="radio" name="slide" id="tsg4">
+                                <input type="radio" name="slide" id="tsg5">
+                                <img src="hp/hpelitef.jpg" class="tsg1"  alt="dimg1">
+                                <img src="hp/hpelitel.jpg" class="tsg2"  alt="dimg2">
+                                <img src="hp/hpeliter.jpg" class="tsg3"  alt="dimg3">
+                                <img src="hp/hpeliteb.jpg" class="tsg4"  alt="dimg4">
+                                <img src="hp/hpelitebb.jpg" class="tsg5"  alt="dimg5">
+                            </div>
+                            <div class="dots">
+                                <label for="tsg1"></label>
+                                <label for="tsg2"></label>
+                                <label for="tsg3"></label>
+                                <label for="tsg4"></label>
+                                <label for="tsg5"></label>
+                            </div>
+                        </div> 
+                        <div class="lapname">
+                            <h3>toshiba EliteBook 840 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™ </li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="show">
+                    <a class="btn showmemore" href="www.hp.com">show me more</a>
+                </div>
+                <div class="memore">
+                    <a class="btn showmemore sb" href="#brand">show me more brands</a>
+                </div>
+            </div>
+        </section>
+        <section class="lapsdisp" id="samsung">
+            <div class="row">
+                <img class="logo" src="hp/Samsung.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="smg1" checked>
+                                <input type="radio" name="slide" id="smg2">
+                                <input type="radio" name="slide" id="smg3">
+                                <input type="radio" name="slide" id="smg4">
+                                <input type="radio" name="slide" id="smg5">
+                                <img src="hp/hppro455F.jpg"  class="sm1" alt="img1">
+                                <img src="hp/hppro455L.jpg"  class="sm2" alt="img2">
+                                <img src="hp/hppro455r.jpg"  class="sm3" alt="img3">
+                                <img src="hp/hppro455C.jpg"  class="sm4" alt="img4">
+                                <img src="hp/hppro455CC.jpg" class="sm5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="smg1"></label>
+                                <label for="smg2"></label>
+                                <label for="smg3"></label>
+                                <label for="smg4"></label>
+                                <label for="smg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>samsung ProBook 455 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™</li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="samg1" checked>
+                                <input type="radio" name="slide" id="samg2">
+                                <input type="radio" name="slide" id="samg3">
+                                <input type="radio" name="slide" id="samg4">
+                                <input type="radio" name="slide" id="samg5">
+                                <input type="radio" name="slide" id="samg6">
+                                <input type="radio" name="slide" id="samg7">
+                                <img src="hp/hpzbookf.jpg"  class="sag1" alt="img1">
+                                <img src="hp/hpzbookl.jpg"  class="sag2" alt="img2">
+                                <img src="hp/hpzbookr.jpg"  class="sag3" alt="img3">
+                                <img src="hp/hpzbookb.jpg"  class="sag4" alt="img4">
+                                <img src="hp/hpzbookBb.jpg" class="sag5" alt="img5">
+                            </div>
+                            <div class="dots">
+                                <label for="samg1"></label>
+                                <label for="samg2"></label>
+                                <label for="samg3"></label>
+                                <label for="samg4"></label>
+                                <label for="samg5"></label>
+                            </div>
+                        </div>
+                        <div class="lapname">
+                            <h3>samsung ZBook Power G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13-inch laptop</li>
+                                <li>11th Gen InteI® Core™</li>
+                                <li>stunning materials</li>
+                                <li>minimal footprint</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="lap1">
+                        <div class="hlider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="sasg1" checked>
+                                <input type="radio" name="slide" id="sasg2">
+                                <input type="radio" name="slide" id="sasg3">
+                                <input type="radio" name="slide" id="sasg4">
+                                <input type="radio" name="slide" id="sasg5">
+                                <img src="hp/hpelitef.jpg" class="sas1"  alt="dimg1">
+                                <img src="hp/hpelitel.jpg" class="sas2"  alt="dimg2">
+                                <img src="hp/hpeliter.jpg" class="sas3"  alt="dimg3">
+                                <img src="hp/hpeliteb.jpg" class="sas4"  alt="dimg4">
+                                <img src="hp/hpelitebb.jpg" class="sas5"  alt="dimg5">
+                            </div>
+                            <div class="dots">
+                                <label for="sasg1"></label>
+                                <label for="sasg2"></label>
+                                <label for="sasg3"></label>
+                                <label for="sasg4"></label>
+                                <label for="sasg5"></label>
+                            </div>
+                        </div> 
+                        <div class="lapname">
+                            <h3>samsung EliteBook 840 G9</h3>
+                            <p class="price">Starting from ₦340k</p>
+                        </div>
+                        <div>
+                            <ul class="info">
+                                <li>13.3-inch laptop</li>
+                                <li>11th Gen Intel® Core™ </li>
+                                <li>classic design</li>
+                                <li>3-sided InfinityEdge display</li>
+                            </ul>
+                        </div>
+                        <div class="btnn">
+                            <a href="#" class="btn btnif">more info &nbsp;<i class="fa fa-info-circle" id="faexternal"></i></a>
+                            <a href="#" class="btn btnby">Buy Now <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="show">
+                    <a class="btn showmemore" href="www.hp.com">show me more</a>
+                </div>
+                <div class="memore">
+                    <a class="btn showmemore sb" href="#brand">show me more brands</a>
+                </div>
+            </div>
+        </section>
+        
+        <br>
+        <br>
+        <br>
         <div class="stech">
             <h2>SWITCH TO TECH TODAY!</h2>
         </div>
-        <section class="dellapsdisp">
-            <img class="dellogo" src="hp/dellogo.png" alt="">
-            <hr>
-            <div class="secondparent">
-                    <div class="hpparent2">
-                    <div class="hplap1">
-                        <div class="hlider">
-                            <div class="images">
-                                <input type="radio" name="slide" id="tmg1" checked>
-                                <input type="radio" name="slide" id="tmg2">
-                                <input type="radio" name="slide" id="tmg3">
-                                <input type="radio" name="slide" id="tmg4">
-                                <input type="radio" name="slide" id="tmg5">
-
-                                <img src="hp/dellxpsf.jpg" class="t1"  alt="">
-                                <img src="hp/dellxps.jpg" class="t2"  alt="">
-                                <img src="hp/dellxpsr.jpg" class="t3"  alt="">
-                                <img src="hp/dellxpss.jpg" class="t4"  alt="">
-                                <img src="hp/dllxpsa.jpg" class="t5"  alt="">
-                            </div>
-                            <div class="dots">
-                                <label for="tmg1"></label>
-                                <label for="tmg2"></label>
-                                <label for="tmg3"></label>
-                                <label for="tmg4"></label>
-                                <label for="tmg5"></label>
-                            </div>
-                        </div>                        
-                        <br>
-                        <h3>DELL XPS 15 Laptop</h3>
-                        <p class="price">Starting from ₦340K</p> <br>
-                        <p class="info">13.3-inch laptop featuring 11th Gen Intel® Core™ processors in a classic design with a 3-sided InfinityEdge display.</p>
-                    <button class="btninf"><a href="#">More Info</a> &nbsp;<i class="fa fa-angle-right"></i></button>
-                    <button class="btn">BUY NOW!&nbsp <i class="fa fa-shopping-cart"></i></button>
+        <section class="sectioncities js--wp-2" id="cities">
+            <div class="row city">
+                <h2>WE ARE CURRENTLY IN THESE CITIES</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <img src="img/abj.jpeg" alt="">
+                    <h3>Lagos</h3>
+                    <div class="cityFeautre">
+                        <i class="fa fa-users"></i>
+                        1000+ Happy Customers
                     </div>
-                <div id="vertical-line"></div>
-                    <br>
-                    <div class="hplap1">
-                        <div class="hlider">
-                            <div class="images">
-                                <input type="radio" name="slide" id="timg1" checked>
-                                <input type="radio" name="slide" id="timg2">
-                                <input type="radio" name="slide" id="timg3">
-                                <input type="radio" name="slide" id="timg4">
-                                <input type="radio" name="slide" id="timg5">
-
-                                <img src="hp/dellxpqf.jpg"  class="ti1"  alt="">
-                                <img src="hp/dellxpql.jpg"  class="ti2"  alt="">
-                                <img src="hp/dellxpqr.jpg"  class="ti3"  alt="">
-                                <img src="hp/dellxpqb.jpg" class="ti4"  alt="">
-                                <img src="hp/dellpb.jpg"    class="ti5"  alt="">
-
-                            </div>
-                            <div class="dots">
-                                <label for="timg1"></label>
-                                <label for="timg2"></label>
-                                <label for="timg3"></label>
-                                <label for="timg4"></label>
-                                <label for="timg5"></label>
-                            </div>
-                        </div>                        
-                        <br>
-                        <h3>DELL XPS 13</h3>
-                        <p class="price">Starting from ₦340K</p> <br>
-                        <p class="info">13-inch laptop designed with precision engineered details, from stunning materials to minimal footprint, with true unrivaled performance and 11th Gen InteI® Core™ processors.</p>
-                    <button class="btninf"><a href="#">More Info</a> &nbsp;<i class="fa fa-angle-right"></i></button>
-                    <button class="btn">BUY NOW!&nbsp <i class="fa fa-shopping-cart"></i></button> 
-                    </div>  
-                <div id="vertical-line"></div>
-                    <br>
-                    <div class="hplap1">
-                        <div class="hlider">
-                            <div class="images">
-                                <input type="radio" name="slide" id="tpimg1" checked>
-                                <input type="radio" name="slide" id="tpimg2">
-                                <input type="radio" name="slide" id="tpimg3">
-                                <input type="radio" name="slide" id="tpimg4">
-                                <input type="radio" name="slide" id="tpimg5">
-
-                                <img src="hp/dellpf.jpg" class="tpi1"  alt="">
-                                <img src="hp/dellpl.jpg" class="tpi2"  alt="">
-                                <img src="hp/dellpr.jpg" class="tpi3"  alt="">
-                                <img src="hp/dellps.jpg" class="tpi4"  alt="">
-                                <img src="hp/dellpb.jpg" class="tpi5"  alt="">
-                            </div>
-                            <div class="dots">
-                                <label for="tpimg1"></label>
-                                <label for="tpimg2"></label>
-                                <label for="tpimg3"></label>
-                                <label for="tpimg4"></label>
-                                <label for="tpimg5"></label>
-                            </div>
-                        </div>                        
-                        <br>
-                        <h3>DELL XPS 13 2-in-1</h3>
-                        <p class="price">Starting from ₦340K</p> <br>
-                        <p class="info">13-inch 2-in-1 that's artfully crafted with premium materials to be thin and powerful with the new 11th Gen Intel® Core™ processors.</p>
-                    <button class="btninf"><a href="">More Info</a> &nbsp;<i class="fa fa-angle-right"></i></button>
-                    <button class="btn">BUY NOW!&nbsp <i class="fa fa-shopping-cart"></i></button>
-                    </div>    
-                    <br>
+                    <div class="cityFeature">
+                        <i class="fa fa-building"></i>
+                        60+ Top Distributors/Repair Speciallists
+                    </div>
+                    <div class="cityFeature">
+                        <i class="fa fa-twitter"></i>
+                        <a href="#">@TCP_Lagos</a>
                     </div>
                 </div>
-            </section>
+                <div class="col span-1-of-4 box">
+                    <img src="img/abj.jpeg" alt="">
+                    <h3>Abuja</h3>
+                    <div class="cityFeature">
+                        <i class="fa fa-users"></i>
+                        500+ Happy Customers
+                    </div>
+                    <div class="cityFeature">
+                        <i class="fa fa-building"></i>
+                        40+ Top Distributors/Repair Speciallists
+                    </div>
+                    <div class="cityFeature">
+                        <i class="fa fa-twitter"></i>
+                        <a href="#">@TCP_Abuja</a>
+                    </div>
+                </div>    
+                <div class="col span-1-of-4 box">
+                    <img src="img/abj.jpeg" alt="">
+                    <h3>Portharcourt</h3>
+                    <div class="cityFeature">
+                        <i class="fa fa-users"></i>
+                        700+ Happy Customers
+                    </div>
+                    <div class="cityFeature">
+                        <i class="fa fa-building"></i>
+                        90+ Top Distributors/Repair Speciallists
+                    </div>
+                    <div class="cityFeature">
+                        <i class="fa fa-twitter"></i>
+                        <a href="#">@TCP_PH</a>
+                    </div>
+                </div>    
+                <div class="col span-1-of-4 box">
+                    <img src="img/abj.jpeg" alt="">
+                    <h3>Owerri</h3>
+                    <div class="cityFeature">
+                        <i class="fa fa-users"></i>
+                        300+ Happy Customers
+                    </div>
+                    <div class="cityFeature">
+                        <i class="fa fa-building"></i>
+                        65+ Top Distributors/Repair Speciallists
+                    </div>
+                    <div class="cityFeature">
+                        <i class="fa fa-twitter"></i>
+                        <a href="#">@TCP_Owerri</a>
+                    </div>
+                </div>    
+            </div>
         </section>
-        <br>
+        <section class="swap js--wp-1" id="swap">
+            <div class="row srow">
+                <h2>want to swap your pc?</h2>
+                <p>you can only swap brand for brand</p>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="swapform">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your Full Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="Email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="number">Phone No.</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" name="number" id="number" placeholder="Your Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="brd">Brand of PC</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="brd" id="brd">
+                                <option value="select a brand" selected>SELECT</option>
+                                <option value="APPLE">APPLE</option>
+                                <option value="ASUS">ASUS</option>
+                                <option value="DELL">DELL</option>
+                                <option value="HP">HP</option>
+                                <option value="LENOVO">LENOVO</option>
+                                <option value="MICROSOFT">MICROSOFT</option>
+                                <option value="SAMSUNG">SAMSUNG</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="condition">Condition Of PC</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="condition" placeholder="Condition/State of PC. I.E if PC is faulty"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="address">Home Address</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="address" id="address" placeholder="Your Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="type">Type of PC you want</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="type" id="type" placeholder="Must be the same brand">
+                        </div>
+                    </div>    
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </section>
+        <div class="stech">
+            <h2>UPGRADE TO A NEW PC TODAY!</h2>
+        </div>
+        <section class="repair js--wp-1i" id="repair">
+            <div class="row rrow">
+                <h2>want to Repair your pc?</h2>
+                <p>Give us details about your PC</p>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="swapform">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your Full Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="Email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="number">Phone No.</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" name="number" id="number" placeholder="Your Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="brd">Brand of PC</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="brd" id="brd">
+                                <option value="select a brand" selected>SELECT</option>
+                                <option value="APPLE">APPLE</option>
+                                <option value="ASUS">ASUS</option>
+                                <option value="DELL">DELL</option>
+                                <option value="HP">HP</option>
+                                <option value="LENOVO">LENOVO</option>
+                                <option value="MICROSOFT">MICROSOFT</option>
+                                <option value="SAMSUNG">SAMSUNG</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="condition">Condition Of PC</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="condition" placeholder="Condition/State of PC. I.E if PC is faulty"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="address">Home Address</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="address" id="address" placeholder="Your Address">
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </section>
+        <section class="sectionTestimonials">
+            <div class="row">
+                <h2 class="marks">OUR CUSTOMERS REMARKS</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        The Computer Place is just awesome! They have the best computers and their speciallists are top notch. They have the best computers and their speciallists are top notch.
+                        <cite><img src="img/paul.jpg" alt="Laban Paul">Laban Paul</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        The Computer Place is just awesome! They have the best computers and their speciallists are top notch. They have the best computers and their speciallists are top notch.
+                        <cite><img src="img/kelly.jpg" alt="Laban Kelly">Laban Kelly</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        The Computer Place is just awesome! They have the best computers and their speciallists are top notch. They have the best computers and their speciallists are top notch.
+                        <cite><img src="img/paull.jpg" alt="Laban Pauline">Laban Pauline</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
         <footer>
-        <div class="footercontent">
-            <h3>THE COMPUTER PLACE</h3>
+        <div class="footercontent" id="footer">
+            <h3>THE &nbsp COMPUTER &nbsp PLACE</h3>
             <p>BUY. &nbsp&nbsp&nbsp SELL. &nbsp&nbsp&nbsp SWAP. &nbsp&nbsp&nbsp REPAIR. &nbsp&nbsp&nbsp<a href="#">view my Portfolio &nbsp<i class="fa fa-external-link"></i></a> </p>
             <ul class="socials">
                 <li><a href="wa.link/ugcr4e"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="https://twitter.com/sauldeysleep"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrgmQNWcGWcjZzLNBQRppqlkHngBGjSdkMpPcfzmNmJQKwtJMgSvZfFBpqcDdGpjRzTbBV"><i class="fa fa-google-plus"></i></a></li>
             </ul>
@@ -305,6 +1313,8 @@
         </div>
     </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="jquery.waypoints.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>

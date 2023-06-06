@@ -1,0 +1,113 @@
+/* big tablet to 1200px */
+@media only screen and (max-width: 1200px){
+nav a{color: #fff; font-size: 12px;}
+#tcp{width:40%;}
+h2{font-size: 60px}
+nav ul{margin-left:35%}
+.menubar {margin-top: 15%;}
+.brands {margin-top: 20px;}
+.row{padding: 0 1%;}
+nav ul li:hover .dropdownmenu2 ul li a{margin-left: 0px;}}
+
+/* small tablets to big tablets from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+header{height: 120vh}
+nav a{font-size: 15px;}
+.tcp{width: 29%; margin-left: 2%;}
+nav ul{margin-left: 32%;}
+h2{font-size: 50px;}
+.menubar{width: 45%; margin-top: 15%; margin-left: 25%;}
+.menubar ul{padding: 0 5px;}
+.brands{margin-top: -1%; margin-left: -2%;}
+.brands a {padding: 0 5px;margin-left: 10px; font-size: 14px;}
+.logo{margin-bottom: 2%;}
+.row{padding: 0 1%;}
+.lap1{height: 80vh;}
+.images img{padding: 0 250px;}
+.stech h2{ font-size: 45px;}
+.city h2{font-size: 35px}
+.lap1 h3{font-size: 18px}
+.lapsdisp{height: 100%;}
+.lap1{height: 100%; }
+.col {width: 100%; margin: 0 0 4% 0%;}
+.sb{margin-left: 70%;}
+.footerbottom{margin-top:-5%;}
+blockquote{margin-left: 10%;}}
+
+/* small phones to small tablets from 481 - 767 */
+@media only screen and (max-width: 767px) {
+header{height: 100vh;}
+.tcpa {
+    font-size: 15px;
+    margin-left: 4%;
+    float: left;
+    padding: 5px 0;
+    width: 30%
+}
+.mainNav{display: none;}
+.mainNav{float: left; margin-left: 10%; }
+.mainNav li{ display: block; padding: 5px 0;}
+.mobilenavicon {display: inline-block;}
+h2{font-size: 40px;}
+.menubar {margin-top: 70px; width: 65%; background: none;}
+.menubar ul{margin-left: -5%;}
+.menubar ul li a {font-size: 20px;}
+.brands {left: 10%; height: 30px; padding: 0 5px;}
+.brands a {
+    margin-top: 5%;
+    border: none;
+    letter-spacing: 2px;
+    margin-left: 0px;
+    font-size: 20px;}
+textbox h2{margin-top: 8px;}
+.logo{margin-bottom: 2%;}
+.lap1{height: 80vh;}
+.images img{padding: 0 20px;}
+.lap1 h3{font-size: 18px}
+.lapsdisp{height: 100%; }
+.lap1{height: 100%; }
+.col {width: 100%; margin: 0 0 4% 0%;}
+.images img{padding: 0  183px;}
+.btnby {right: 5%;}
+.city h2{font-size: 35px}
+.srow h2,
+.rrow h2{font-size: 45px}
+blockquote{margin-left: 2%;}
+.footerbottom{margin-top: -5%;}}
+
+/* small phones from 0 - 480px */
+@media only screen and (max-width: 500px) {
+header {height: 85vh;}
+.tcpa {
+    font-size: 12px;
+    margin-left: 4%;
+    float: left;
+    padding: 5px 0;
+    width: 40%
+}
+.mainNav{float: left;  margin-left: 5%;}
+.mainNav li {display: block;}
+h2{font-size: 25px; margin-top: 40px;}
+.menubar{margin-left: 17%; margin-top: 50px}
+.menubar ul{padding: 0 1px;}
+.menubar ul li a{font-size: 15px;}
+.brands{left: 10%; height: 23px; padding: 0 2px;}
+.brands a{
+    margin-top: 5%;
+    border: none;
+    letter-spacing: 2px;
+    margin-left: 0px;
+    font-size: 10px;}
+.textbox p{font-size: 17px;}
+.logo{margin-bottom: 2%;}
+.row {padding: 0 2%;}
+.lapsdisp{height: 100%; }
+.lap1{height: 100%; }
+.col {width: 100%; margin: 0 0 4% 0%;}
+.images img{padding: 50px;}
+.sb{margin-left: 54%}
+.city h2{font-size: 23px}
+.srow h2,
+.rrow h2{font-size: 30px}
+blockquote{margin-left: 5%;}
+.footerbottom {margin-top: -9%;}}
