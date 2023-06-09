@@ -19,10 +19,10 @@ const swiper = new Swiper('.swiper', {
 });
 // BUTTON CLICK 
 document.querySelector('.brand').onclick = function () {
-  document.querySelector('.brands').style.display = 'inline-flex'
+  document.querySelector('.brands').style.display = 'flex'
 }
 document.querySelector('.sb').onclick = function () {
-  document.querySelector('.brands').style.display = 'inline-flex'
+  document.querySelector('.brands').style.display = 'flex'
 }
 document.querySelector('.fa-window-close').onclick = function () {
   document.querySelector('.brands').style.display = 'none'
