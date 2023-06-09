@@ -75,7 +75,7 @@ blockquote{margin-left: 2%;}
 .footerbottom{margin-top: -5%;}}
 
 @media only screen and (max-width: 720px) {
-header{height: 100vh;}
+header{height: 90vh;}
 .tcpa {
     font-size: 12px;
     margin-left: 4%;
