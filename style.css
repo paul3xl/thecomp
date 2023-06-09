@@ -143,10 +143,7 @@ h2:hover{color: #fff;}
     transition: opacity 0.5s, border 0.5s, ;
     opacity: 0.5;
 }
-.brands a:hover {
-    opacity: 1;
-    border: 0.5px solid #8888882c;
-}
+.brands a:hover {opacity: 1; border: 0.5px solid #8888882c;}
 .fa-window-close {
     font-size: 20px;
     color: #888888cc;
@@ -159,10 +156,7 @@ h2:hover{color: #fff;}
     float: right;
     display: none;
 }
-.mobilenavicon i {
-    font-size: 200%;
-    color: #fff;
-}
+.mobilenavicon i {font-size: 200%; color: #fff;}
 /* LAP DISP */
 .textbox {
     margin-top: -10px;
