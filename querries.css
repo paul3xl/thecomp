@@ -48,16 +48,17 @@ header{height: 100vh;}
 .mainNav{float: left; margin-left: 10%; }
 .mainNav li{ display: block; padding: 5px 0;}
 .mobilenavicon {display: inline-block;}
-h2{font-size: 30px;}
+h2{font-size: 30px}
 .menubar{width: 100%; margin-left: 0}
 .menubar ul li a {font-size: 20px;}
 .brands {width: 100%; margin-top: 45px;}
-.brands a {
+.brands ul li a {
     margin: 0;
     border: none;
+    padding: 5px;
     letter-spacing: 1px;
     text-align: center;
-    font-size: 15px;}
+    font-size: 13px;}
 .textbox p{font-size: 16px;}
 .logo{margin-bottom: 2%;}
 .lap1{height: 80vh;}
@@ -68,14 +69,15 @@ h2{font-size: 30px;}
 .col {width: 100%; margin: 0 0 4% 0%;}
 .images img{padding: 0  183px;}
 .btnby {right: 5%;}
-.city h2{font-size: 35px}
-.srow h2,
-.rrow h2{font-size: 45px}
+.stech h2{font-size: 30px;}
+.srow h2{font-size: 30px;}
+.rrow h2{font-size: 30px;}
+.city h2{font-size: 20px;}
 blockquote{margin-left: 2%;}
 .footerbottom{margin-top: -5%;}}
 
 @media only screen and (max-width: 720px) {
-header{height: 100vh;}
+header{height: 87vh;}
 .tcpa {
     font-size: 12px;
     margin-left: 4%;
@@ -88,9 +90,9 @@ header{height: 100vh;}
 .mainNav li{ display: block; padding: 5px 0;}
 .mobilenavicon {display: inline-block;}
 h2{font-size: 25px;}
-.menubar{width: 100%; margin-left: 0}
+.menubar{width: 100%; margin-left: 0; margin-top: 5%;}
 .menubar ul li a {font-size: 14px;}
-.brands {width: 100%; margin-top: 45px;}
+.brands {width: 100%;}
 .brands a {
     margin: 0;
     border: none;
@@ -108,8 +110,8 @@ h2{font-size: 25px;}
 .images img{padding: 0  183px;}
 .sb{margin-left: 50%;}
 .btnby {right: 5%;}
-.city h2{font-size: 35px}
+.city h2{font-size: 25px}
 .srow h2,
-.rrow h2{font-size: 45px}
-blockquote{margin-left: 2%;}
-.footerbottom{margin-top: -5%;}}
+.rrow h2{font-size: 34px}
+blockquote{margin-left: 6%;}
+.footerbottom{margin-top: -9%;}}

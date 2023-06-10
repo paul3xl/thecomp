@@ -127,12 +127,14 @@ h2:hover{color: #fff;}
 .menubar ul li a:hover {color: #fff}
 .brands {
     display: flex;
+    margin-top: 5%;
     justify-content: center;
     align-items: center;
     display: none;
 }
+.brands ul{display: flex;}
+.brands ul li{list-style: none}
 .brands a {
-    margin-top: 45px;
     border: none;
     border-radius: 2px;
     padding: 10px 15px;
@@ -151,12 +153,14 @@ h2:hover{color: #fff;}
     cursor: pointer;
     margin-top: 2%;
 }
+.fa-window-close:hover{color: #fff;}
 .mobilenavicon{
     cursor: pointer;
     float: right;
     display: none;
 }
-.mobilenavicon i {font-size: 200%; color: #fff;}
+.mobilenavicon i {font-size: 200%; color: #888; transition: all 0.5s}
+.mobilenavicon i:hover{color: #fff;}
 /* LAP DISP */
 .textbox {
     margin-top: -10px;
